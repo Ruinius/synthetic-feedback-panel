@@ -1,0 +1,8 @@
+[project]
+name = "synthetic-feedback-panel"
+version = "0.1.0"
+description = "A personal project to create 10 synthetic users that give feedback on presentations, demos, products, etc."
+readme = "README.md"
+requires-python = ">=3.14"
+license = { file = "LICENSE" }
+dependencies = []
