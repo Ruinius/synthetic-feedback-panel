@@ -13,6 +13,22 @@ The goal is to run this on OpenHands or Hermes Agent to leverage sub-agents and 
 - **Dependencies:** Use `uv add <package>` to install new dependencies.
 - **Tmp Code:** Temporary logs and scripts saved into `tmp/` directory.
 
+## Project Structure
+- `docs/`: Contains project documentation.
+    - `ARCHITECTURE.md`: Describes the system architecture and multi-agent workflow.
+    - `PLAN.md`: Outlines the implementation plan and project phases.
+    - `SPEC.md`: Specifies the operational workflow and personas.
+- `personas/`: Empty directory (personas are now consolidated into `.openhands/microagents/`).
+- `input/`: Directory for user items and questions to be reviewed.
+- `output/`: Directory for generated feedback and summaries.
+- `.openhands/microagents/`: Contains consolidated OpenHands skill definitions and persona profiles (microagents).
+    - `[persona_name].md`: Individual skills for each of the 10 personas, containing both instructions and persona definition.
+- `.agents/skills/`: Contains other skills (e.g., utility skills like summarizer).
+    - `summarizer.md`: Skill to summarize feedback.
+- `AGENTS.md`: This file, outlining guidelines and project structure.
+- `README.md`: General project overview and setup instructions.
+- `pyproject.toml`: Python project configuration (managed by `uv`).
+
 ## Module Boundaries
 *(To be defined as the project grows)*
 

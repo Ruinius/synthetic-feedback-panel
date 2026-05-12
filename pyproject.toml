@@ -5,4 +5,6 @@ description = "A personal project to create 10 synthetic users that give feedbac
 readme = "README.md"
 requires-python = ">=3.14"
 license = { file = "LICENSE" }
-dependencies = []
+dependencies = [
+    "litellm>=1.83.14",
+]
